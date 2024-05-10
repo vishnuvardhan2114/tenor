@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+.searchbar {
+  animation: searchbar;
+  animation-duration: 2s;
+}
+
+@keyframes searchbar {
+  from {
+    margin-left: 85%;
+  }
+  to {
+    margin-right: 65%;
+  }
+}
+.slick-slider > button {
+  background-color: #b6b6b6eb;
+  border-radius: 15px;
+  padding-top: 0.5px;
+}
+.slick-slider > button:hover {
+  background-color: rgba(121, 121, 121, 0.92);
+}
+.transition-pl {
+  transition: padding 0.5s ease-in;
+}
+
+.transition-opacity {
+  transition: opacity 0.5s ease-in;
+}
